@@ -1,0 +1,33 @@
+﻿<Window x:Class="Ekz_codeFirst.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ekz_codeFirst"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+        <Grid>
+        <StackPanel Margin="50">
+            <DataGrid x:Name="existingItemsGrid" Grid.Row="0" Grid.ColumnSpan="2" Height="150" >
+            </DataGrid>
+            <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.ColumnSpan="2" Height="50">
+                <TextBox x:Name="Name" Width="100"></TextBox>
+                <TextBox x:Name="Price" Width="100"></TextBox>
+                <TextBox x:Name="Room" Width="100"></TextBox>
+                <TextBox x:Name="ProducYear" Width="100"></TextBox>
+                <Button Content="Add"  Width="100" Click="Button_Click_Add"></Button>
+                <Button Content="Delete" Width="100" Click="Button_Click_Delete"></Button>
+            </StackPanel>
+        </StackPanel>
+
+
+
+    
+
+        </Grid>
+
+
+
+
+</Window>
